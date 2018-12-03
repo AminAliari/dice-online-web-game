@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="resources/style.css">
+    <script src="manager.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="custom-button" id="play-button">
+            <img src="resources/images/plus_icon.png">
+            <p>NEW GAME</p>
+        </div>
+
+        <div id="players-panel">
+            <div id="player-1-panel">
+                <p>PLAYER 0<img id="turn-0" src="resources/images/turn_icon.png"></p>
+                <p id="total-score-0">0</p>
+            </div>
+
+            <div id="dice-panel">
+                <img id="dice-0" src="resources/images/dices/dice-2.png">
+                <img id="dice-1" src="resources/images/dices/dice-2.png">
+            </div>
+            <div id="player-2-panel">
+                <p>PLAYER 1<img id="turn-1" src="resources/images/turn_icon.png"></p>
+                <p id="total-score-1">0</p>
+            </div>
+        </div>
+
+        <div id="bottom-panel">
+            <div id="score-1-panel">
+                <p>CURRENT</p>
+                <P id="score-0">0</P>
+            </div>
+            <div id="option-panel">
+                <div class="custom-button" id="roll-button">
+                    <img src="resources/images/roll_icon.png">
+                    <p>ROLL DICE</p>
+                </div>
+
+                <div class="custom-button" id="hold-button">
+                    <img src="resources/images/hold_icon.png">
+                    <p>HOLD</p>
+                </div>
+
+                <input id="score-input" type="text" placeholder="score: 100">
+            </div>
+            <div id="score-2-panel">
+                <p>CURRENT</p>
+                <P id="score-1">0</P>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

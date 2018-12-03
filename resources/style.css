@@ -1,0 +1,275 @@
+@font-face {
+    font-family: "mSourceSansPro";
+    src:url("fonts/SourceSansPro-Light.otf");
+}
+body {
+    background: url(images/background.jpg);
+    background-size: cover; 
+    font-family: 'mSourceSansPro', sans-serif;
+}
+
+#container {
+    margin: auto;
+    margin-top: 2.5%;
+    padding-top: 30px;
+    width: 1000px;
+    height: 500px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#play-button {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 135px;
+    height: 25px;
+}
+
+#play-button img {
+    margin: auto;
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+
+#play-button p {
+    margin: auto;
+    float: right;
+    font-size: 20px;
+    color: #000000;
+}
+
+/*
+    players
+*/
+#players-panel {
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    width: 700px;
+    height: 150px;
+}
+
+#player-1-panel{
+    float: left;
+    width: 50%;
+    height: 150px;
+}
+
+#player-1-panel p {
+    margin: 0;
+    width: 180px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#player-1-panel #score {
+    text-align: center;
+    font-size: 70px;
+    font-weight: lighter;
+    color: #eb4d4d;
+}
+
+#player-1-panel p img {
+    max-width: 5%;
+    max-height: 5%;
+    vertical-align: 20%;
+    margin-left: 10px;
+}
+
+#dice-panel{
+    float: center;
+    width: 40%;
+    height: 100px;
+    margin-right: 130px;
+    margin-left: 130px;
+}
+
+#dice-panel img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40%;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+}
+
+#player-2-panel{
+    float: right;
+    width: 50%;
+    height: 150px;
+}
+
+#player-2-panel p {
+    margin: 0;
+    text-align: center;
+    width: 180px;
+    font-size: 40px;
+}
+
+#player-2-panel #score {
+    text-align: center;
+    font-size: 70px;
+    font-weight: lighter;
+    color: #eb4d4d;
+}
+
+#player-2-panel p img {
+    max-width: 5%;
+    max-height: 5%;
+    vertical-align: 20%;
+    margin-left: 10px;
+    display: none;
+}
+
+/*
+    scores
+*/
+#bottom-panel {
+    margin: auto;
+    margin-top: 130px;
+    display: flex;
+    width: 700px;
+    height: 150px;
+}
+
+#score-1-panel{
+    float: left;
+    width: 20%;
+    height: 80px;
+    padding-top: 10px;
+    background-color: #eb4d4d;
+}
+
+#score-1-panel p {
+    margin: auto;
+    align-self: auto;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    height: 30px;
+}
+
+#score-1-panel #score {
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+/*
+options
+*/
+#option-panel{
+    float: center;
+    align-content: center;
+    width: 500px;
+    height: 150px;
+}
+
+
+#roll-button {
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    width: 135px;
+    height: 25px;
+}
+
+#roll-button img {
+    margin: auto;
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+
+#roll-button p {
+    margin: auto;
+    float: right;
+    font-size: 20px;
+    color: #000000;
+}
+
+#hold-button {
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 25px;
+}
+
+#hold-button img {
+    margin: auto;
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+
+#hold-button p {
+    margin: auto;
+    float: right;
+    font-size: 20px;
+    color: #000000;
+}
+
+#score-input {
+    margin: auto;
+    display: flex;
+    align-content: center;
+    width: 75px;
+    padding: 8px;
+    text-align: center;
+    border: none;
+    border:solid 1px #ccc;
+    border-radius: 10px;
+    background-color: none;
+}
+
+#score-input::placeholder {
+    color: #eb4d4d;   
+}
+/**/
+
+#score-2-panel{
+    width: 20%;
+    height: 80px;
+    padding-top: 10px;
+    background-color: #eb4d4d;
+    float: right;
+}
+
+#score-2-panel p {
+    margin: auto;
+    align-self: auto;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    height: 30px;
+}
+
+#score-2-panel #score {
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+.custom-button p {
+    user-select: none;
+    color: #5d5d5d !important;
+}
+
+.custom-button:hover > p{
+    color: #212121 !important;
+    font-weight: normal;
+}
+
+.custom-button:active > p {
+    color: #000000 !important;
+    font-weight: bold;
+}
